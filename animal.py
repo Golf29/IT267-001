@@ -15,6 +15,9 @@ class Animal:
         print(f'breed:{self.breed}')
         print(f'colour:{self.colour}')
         print(f'age:{self.age}')
+        
+    def __del__(self):
+        print(f'Object was destroyed')
 
 if __name__ == '__main__':
     Animal.animal = 'FISH'
@@ -34,3 +37,8 @@ if __name__ == '__main__':
     
     print(f'{Animal.__dict__}')
     print(f'{ula.__dict__}')
+
+    peter = Animal()
+    peter.new_animal('Peter','Rarrot','green yellow red',2)
+    peter.legs = 2
+    print(f'{peter.__dict__}')
