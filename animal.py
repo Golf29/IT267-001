@@ -28,5 +28,9 @@ if __name__ == '__main__':
     drac.print_detail()
     drac.breed = 'Carfish'
     drac.print_detail()
+    
     Animal.print_detail(ula)
     Animal.print_detail(drac)
+    
+    print(f'{Animal.__dict__}')
+    print(f'{ula.__dict__}')
